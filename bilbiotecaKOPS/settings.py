@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
+    'rest_framework.authtoken',
     
     # Usa los nombres de las carpetas directamente:
     'apps.clientes',
@@ -59,6 +62,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'bilbiotecaKOPS.urls'
+
+LOGIN_URL = '/api-auth/login/'
+LOGIN_REDIRECT_URL = '/api/productos/'
 
 TEMPLATES = [
     {

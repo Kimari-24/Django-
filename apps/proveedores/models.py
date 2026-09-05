@@ -1,14 +1,15 @@
 
 from django.db import models
-# Create your models here.
 
-class Clientes(models.Model):
-    name = models.CharField(null=True, max_length=50)
-    last_name = models.CharField(null=True, max_length=50)
-    tipo_usuario = models.CharField(null=True, max_length=50)
+
+class Proveedor(models.Model):
+    nombre = models.CharField(max_length=100)
+    contacto = models.CharField(max_length=100, blank=True)
+    telefono = models.CharField(max_length=30, blank=True)
+    email = models.EmailField(blank=True)
 
     def __str__(self):
-        return f'{self.name}'
+        return self.nombre
 
 
 
