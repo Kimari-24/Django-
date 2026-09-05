@@ -4,6 +4,6 @@ from .views import ProductoViewSet
 
 
 router = DefaultRouter()
-router.register('productos', ProductoViewSet, basename='producto')
+router.register('', ProductoViewSet, basename='producto')
 
 urlpatterns = router.urls

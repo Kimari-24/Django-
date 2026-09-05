@@ -23,6 +23,6 @@ urlpatterns = [
     path('api/auth/login/', obtain_auth_token, name='api-login'),
     path('api-auth/', include('rest_framework.urls')),
     path('api/clientes/', include('apps.clientes.urls')),
-    path('api/', include('apps.productos.urls')),
+    path('api/productos/', include('apps.productos.urls')),
     path('api/proveedores/', include('apps.proveedores.urls')),
 ]

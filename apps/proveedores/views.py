@@ -5,5 +5,5 @@ from .serializers import ProveedorSerializer
 
 
 class ProveedorViewSet(viewsets.ModelViewSet):
-	queryset = Proveedor.objects.all().order_by('id')
-	serializer_class = ProveedorSerializer
+    queryset = Proveedor.objects.all().order_by('id')
+    serializer_class = ProveedorSerializer
